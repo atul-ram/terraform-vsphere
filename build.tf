@@ -28,8 +28,8 @@ resource "vsphere_virtual_machine" "centos-vm" {
 
     # Define the Disks and resources. The first disk should include the template.
     disk {
-        template = "CentOS-7-worker"
-        datastore = "virtual_machines"
+        template = "centos7-worker"
+        datastore = "Datastore_NFS"
         type ="thin"
     }
 

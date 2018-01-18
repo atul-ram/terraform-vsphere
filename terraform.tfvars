@@ -1,6 +1,8 @@
-vsphere_vcenter = "10.0.1.170"
-vsphere_user = "administrator@vghetto.local"
-vsphere_password = "VMware1!"
-vsphere_datacenter = "Datacenter"
-vsphere_cluster = "VSAN-Cluster"
 
+
+
+vsphere_vcenter = "vc1.dcloud.cisco.com"
+vsphere_user = "demouser@dcloud.cisco.com"
+vsphere_password = "C1sco12345"
+vsphere_datacenter = "dCloud-DC"
+vsphere_cluster = "dCloud-Cluster"
