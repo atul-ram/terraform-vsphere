@@ -9,11 +9,13 @@ provider "vSphere" {
 data "vsphere_datacenter" "dc" {}
 
 resource "vsphere_folder" "TerraformFrontEnd" {
-
       datacenter_id = "${data.vsphere_datacenter.dc.id}"
       path = "TerraformFrontEnd"
       type          = "vm"
+}
 
-          }
-
-
+data "vsphere_virtual_machine" "template" {
+  name          = "centos7-worker"
+  datacenter_id = "${data.vsphere_datacenter.dc.id}"
+}
+		  
